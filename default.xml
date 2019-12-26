@@ -18,9 +18,9 @@
           fetch="ssh://git@gitlab.freedesktop.org"/>
 
   
-  <project path="omnirom/android_bootable_recovery" name="bootable/recovery-twrp" remote="github" revision="android-9.0" />
-  <project path="Viciouss/android_device_samsung_n8000" name="device/samsung/n8000" remote="github" revision="aosp-17.0" />
-  <project path="mesa/mesa" name="platform/external/mesa3d" remote="freedesktop" revision="19.3"/>
+  <project name="omnirom/android_bootable_recovery" path="bootable/recovery-twrp" remote="github" revision="android-9.0" />
+  <project name="Viciouss/android_device_samsung_n8000" path="device/samsung/n8000" remote="github" revision="aosp-17.0" />
+  <project name="mesa/mesa" path="platform/external/mesa3d" remote="freedesktop" revision="19.3"/>
 
   <!-- /CHANGED -->
 
