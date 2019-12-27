@@ -20,7 +20,7 @@
   
   <project name="omnirom/android_bootable_recovery" path="bootable/recovery-twrp" remote="github" revision="android-9.0" />
   <project name="Viciouss/android_device_samsung_n80xx_mainline" path="device/samsung/n80xx-mainline" remote="github" revision="aosp-17.0" />
-  <project name="mesa/mesa" path="external/mesa3d" remote="freedesktop" revision="19.3"/>
+  <project name="mesa/mesa" path="external/mesa3d" remote="freedesktop" revision="mesa-19.2.8"/>
 
   <!-- /CHANGED -->
 
