@@ -15,7 +15,7 @@
            fetch="ssh://git@github.com" />
 
   <remote name="freedesktop"
-          fetch="ssh://git@gitlab.freedesktop.org"/>
+          fetch="https://gitlab.freedesktop.org"/>
 
   
   <project name="omnirom/android_bootable_recovery" path="bootable/recovery-twrp" remote="github" revision="android-9.0" />
