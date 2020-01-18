@@ -13,13 +13,9 @@
 
   <remote  name="github"
            fetch="ssh://git@github.com" />
-
-  <remote name="freedesktop"
-          fetch="https://gitlab.freedesktop.org"/>
-
   
   <!--project name="omnirom/android_bootable_recovery" path="bootable/recovery-twrp" remote="github" revision="android-9.0" /-->
-  <project name="Viciouss/android_device_samsung_n80xx_mainline" path="device/samsung/n80xx-mainline" remote="github" revision="aosp-17.0" />
+  <project name="Viciouss/android_device_samsung_p4note" path="device/samsung/p4note" remote="github" revision="aosp-10.0" />
 
   <!-- /CHANGED -->
 
