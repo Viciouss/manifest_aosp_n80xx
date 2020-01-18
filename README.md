@@ -1,4 +1,4 @@
-# Android 10 manifest for Samsung N80XX devices
+# Android 10 manifest for the Samsung p4note device family
 
 ### Init:
 
