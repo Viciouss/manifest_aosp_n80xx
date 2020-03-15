@@ -13,9 +13,20 @@
 
   <remote  name="github"
            fetch="ssh://git@github.com" />
+
+  <remote  name="freedesktop"
+	   revision="master"
+	   fetch="https://gitlab.freedesktop.org/" />
   
   <!--project name="omnirom/android_bootable_recovery" path="bootable/recovery-twrp" remote="github" revision="android-9.0" /-->
   <project name="Viciouss/android_device_samsung_p4note" path="device/samsung/p4note" remote="github" revision="aosp-10.0" />
+
+  <project path="external/libdrm" name="platform/external/libdrm" groups="pdk" revision="master"/> <!-- this is fine! -->
+  <project path="external/mesa3d" name="mesa/mesa" revision="master" remote="freedesktop" groups="pdk-cw-fs,pdk-fs" />
+  <!--project path="external/mesa3d" name="ReplicantOS-midas/android_external_mesa3d" revision="replicant-9" remote="github" groups="pdk-cw-fs,pdk-fs" /-->
+
+  <project path="external/gbm_gralloc" name="robherring/gbm_gralloc" groups="pdk" remote="github" revision="master"/>
+  <project path="external/drm_hwcomposer" name="drm-hwcomposer/drm-hwcomposer" remote="freedesktop" groups="drm_hwcomposer,pdk-fs" revision="master" />
 
   <!-- /CHANGED -->
 
@@ -151,7 +162,6 @@
   <project path="external/dnsmasq" name="platform/external/dnsmasq" groups="pdk" />
   <project path="external/doclava" name="platform/external/doclava" groups="pdk" />
   <project path="external/dokka" name="platform/external/dokka" groups="pdk" />
-  <project path="external/drm_hwcomposer" name="platform/external/drm_hwcomposer" groups="drm_hwcomposer,pdk-fs" revision="9bd25f9a5f586e745f1d0929c9e7eb1bd8f63126" />
   <project path="external/droiddriver" name="platform/external/droiddriver" groups="pdk" />
   <project path="external/drrickorang" name="platform/external/drrickorang" groups="pdk" />
   <project path="external/dtc" name="platform/external/dtc" groups="pdk"/>
@@ -245,7 +255,7 @@
   <project path="external/libcxxabi" name="platform/external/libcxxabi" groups="pdk" />
   <project path="external/libdaemon" name="platform/external/libdaemon" groups="pdk" />
   <project path="external/libdivsufsort" name="platform/external/libdivsufsort" groups="pdk" />
-  <project path="external/libdrm" name="platform/external/libdrm" groups="pdk" />
+  <!--project path="external/libdrm" name="platform/external/libdrm" groups="pdk" /-->
   <project path="external/libese" name="platform/external/libese" groups="pdk" />
   <project path="external/libevent" name="platform/external/libevent" groups="pdk" />
   <project path="external/libexif" name="platform/external/libexif" groups="pdk" />
@@ -289,10 +299,8 @@
   <project path="external/lzma" name="platform/external/lzma" groups="pdk" />
   <project path="external/markdown" name="platform/external/markdown" groups="pdk" />
   <project path="external/mdnsresponder" name="platform/external/mdnsresponder" groups="pdk" />
-  <project path="external/mesa3d" name="ReplicantOS-midas/android_external_mesa3d" revision="replicant-9" remote="github" groups="pdk-cw-fs,pdk-fs" />
-  <!--project path="external/mesa3d" name="platform/external/mesa3d" groups="pdk-cw-fs,pdk-fs" revision="android10-gsi"/-->
+  <!--project path="external/mesa3d" name="platform/external/mesa3d" groups="pdk-cw-fs,pdk-fs"/-->
   <project path="external/Microsoft-GSL" name="platform/external/Microsoft-GSL" groups="pdk" />
-  <project path="external/gbm_gralloc" name="robherring/gbm_gralloc" groups="pdk" remote="github" revision="master"/>
   <project path="external/minigbm" name="platform/external/minigbm" groups="pdk" />
   <project path="external/minijail" name="platform/external/minijail" groups="pdk" />
   <project path="external/mksh" name="platform/external/mksh" groups="pdk" />
