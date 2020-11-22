@@ -21,12 +21,14 @@
   <!--project name="omnirom/android_bootable_recovery" path="bootable/recovery-twrp" remote="github" revision="android-9.0" /-->
   <project name="Viciouss/android_device_samsung_p4note" path="device/samsung/p4note" remote="github" revision="aosp-10.0" />
 
-  <project path="external/libdrm" name="platform/external/libdrm" groups="pdk" revision="master"/> <!-- this is fine! -->
-  <project path="external/mesa3d" name="mesa/mesa" revision="master" remote="freedesktop" groups="pdk-cw-fs,pdk-fs" />
+  <!--project path="external/libdrm" name="platform/external/libdrm" groups="pdk" revision="master"/-->
+  <!--project path="external/mesa3d" name="mesa/mesa" revision="master" remote="freedesktop" groups="pdk-cw-fs,pdk-fs" /-->
+  <project path="external/mesa3d" name="GloDroid/glodroid_forks" revision="mesa3d-next" remote="github" groups="pdk-cw-fs,pdk-fs" />
   <!--project path="external/mesa3d" name="ReplicantOS-midas/android_external_mesa3d" revision="replicant-9" remote="github" groups="pdk-cw-fs,pdk-fs" /-->
 
-  <project path="external/gbm_gralloc" name="robherring/gbm_gralloc" groups="pdk" remote="github" revision="master"/>
-  <project path="external/drm_hwcomposer" name="drm-hwcomposer/drm-hwcomposer" remote="freedesktop" groups="drm_hwcomposer,pdk-fs" revision="main" />
+  <!--project path="external/gbm_gralloc" name="robherring/gbm_gralloc" groups="pdk" remote="github" revision="master"/-->
+  <project path="external/gbm_gralloc" name="GloDroid/glodroid_forks" groups="pdk" remote="github" revision="gbm_gralloc-next"/>
+  <project path="external/drm_hwcomposer" name="GloDroid/glodroid_forks" remote="github" groups="drm_hwcomposer,pdk-fs" revision="drm_hwcomposer-next" />
 
   <!-- /CHANGED -->
 
@@ -252,7 +254,7 @@
   <project path="external/libcxxabi" name="platform/external/libcxxabi" groups="pdk" />
   <project path="external/libdaemon" name="platform/external/libdaemon" groups="pdk" />
   <project path="external/libdivsufsort" name="platform/external/libdivsufsort" groups="pdk" />
-  <!--project path="external/libdrm" name="platform/external/libdrm" groups="pdk" /-->
+  <project path="external/libdrm" name="platform/external/libdrm" groups="pdk" revision="d3505e46291b7ce7b5eb56544e7dfc0ec5de5540" />
   <project path="external/libese" name="platform/external/libese" groups="pdk" />
   <project path="external/libevent" name="platform/external/libevent" groups="pdk" />
   <project path="external/libexif" name="platform/external/libexif" groups="pdk" />
