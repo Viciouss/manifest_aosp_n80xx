@@ -1,105 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <include name="aosp.xml" />
-
-  <remote  name="github"
-           fetch="ssh://git@github.com" />
-
-  <remote  name="freedesktop"
-	   revision="master"
-	   fetch="https://gitlab.freedesktop.org/" />
+  <include name="los.xml" />
 
   <!-- remove repos that are being replaced -->
   <remove-project name="platform/external/mesa3d" />
-  <project path="external/mesa3d" name="GloDroid/glodroid_forks" revision="mesa3d-next" remote="github" groups="pdk-cw-fs,pdk-fs" />
+  <project path="external/mesa3d" name="GloDroid/glodroid_forks" revision="mesa3d-next" remote="private" groups="pdk-cw-fs,pdk-fs" />
 
   <remove-project name="platform/external/drm_hwcomposer" />
-  <project path="external/drm_hwcomposer" name="GloDroid/glodroid_forks" remote="github" groups="drm_hwcomposer,pdk-fs" revision="drm_hwcomposer-next" />
+  <project path="external/drm_hwcomposer" name="GloDroid/glodroid_forks" remote="private" groups="drm_hwcomposer,pdk-fs" revision="drm_hwcomposer-next" />
 
   <!-- additional repos -->
-  <project name="Viciouss/android_device_samsung_p4note" path="device/samsung/p4note" remote="github" revision="aosp-11.0" />
+  <project name="Viciouss/android_device_samsung_p4note" path="device/samsung/p4note" remote="private" revision="aosp-11.0" />
 
-  <project path="external/tinyhal" name="GloDroid/glodroid_forks" remote="github" revision="refs/tags/tinyhal-v1" clone-depth="1" />
-  <project path="external/iio-sensors-hal" name="Viciouss/android-iio-sensors-hal" remote="github" revision="staging" clone-depth="1" />
-  <project path="external/gbm_gralloc" name="GloDroid/glodroid_forks" groups="pdk" remote="github" revision="gbm_gralloc-next"/>
+  <project path="external/tinyhal" name="GloDroid/glodroid_forks" remote="private" revision="refs/tags/tinyhal-v1" clone-depth="1" />
+  <project path="external/iio-sensors-hal" name="Viciouss/android-iio-sensors-hal" remote="private" revision="staging" clone-depth="1" />
+  <project path="external/gbm_gralloc" name="GloDroid/glodroid_forks" groups="pdk" remote="private" revision="gbm_gralloc-next"/>
 
   <project path="prebuilts/gcc/linux-x86/arm/gcc-linaro-arm-linux-gnueabihf"
-                                           remote="github" name="GloDroid/linaro_gcc_prebuilts.git" revision="refs/tags/gcc-linaro-7.4.1-2019.02-x86_64_arm-linux-gnueabihf" />
+                                           remote="private" name="GloDroid/linaro_gcc_prebuilts.git" revision="refs/tags/gcc-linaro-7.4.1-2019.02-x86_64_arm-linux-gnueabihf" />
 
-  <!--project name="omnirom/android_bootable_recovery" path="bootable/recovery-twrp" remote="github" revision="android-9.0" /-->
+  <!--project name="omnirom/android_bootable_recovery" path="bootable/recovery-twrp" remote="private" revision="android-9.0" /-->
 
   <!-- remove other repos -->
   <remove-project name="platform/external/u-boot" />
 
-  <!-- remove all the devices -->
-  <remove-project name="device/amlogic/yukawa"/>
-  <remove-project name="device/amlogic/yukawa-kernel"/>
-  <remove-project name="device/common"/>
-  <remove-project name="device/generic/arm64"/>
-  <remove-project name="device/generic/armv7-a-neon"/>
-  <remove-project name="device/generic/art"/>
-  <remove-project name="device/generic/car"/>
-  <remove-project name="device/generic/common"/>
-  <remove-project name="device/generic/goldfish"/>
-  <remove-project name="device/generic/goldfish-opengl"/>
-  <remove-project name="device/generic/mini-emulator-arm64"/>
-  <remove-project name="device/generic/mini-emulator-armv7-a-neon"/>
-  <remove-project name="device/generic/mini-emulator-x86"/>
-  <remove-project name="device/generic/mini-emulator-x86_64"/>
-  <remove-project name="device/generic/opengl-transport"/>
-  <remove-project name="device/generic/qemu"/>
-  <remove-project name="device/generic/trusty"/>
-  <remove-project name="device/generic/uml"/>
-  <remove-project name="device/generic/x86"/>
-  <remove-project name="device/generic/x86_64"/>
-  <remove-project name="device/google/atv"/>
-  <remove-project name="device/google/bonito"/>
-  <remove-project name="device/google/bonito-kernel"/>
-  <remove-project name="device/google/bonito-sepolicy"/>
-  <remove-project name="device/google/contexthub"/>
-  <remove-project name="device/google/coral"/>
-  <remove-project name="device/google/coral-kernel"/>
-  <remove-project name="device/google/coral-sepolicy"/>
-  <remove-project name="device/google/sunfish"/>
-  <remove-project name="device/google/sunfish-kernel"/>
-  <remove-project name="device/google/sunfish-sepolicy"/>
-  <remove-project name="device/google/crosshatch"/>
-  <remove-project name="device/google/crosshatch-kernel"/>
-  <remove-project name="device/google/crosshatch-sepolicy"/>
-  <remove-project name="device/google/cuttlefish"/>
-  <remove-project name="device/google/cuttlefish_kernel"/>
-  <remove-project name="device/google/cuttlefish_vmm"/>
-  <remove-project name="device/google/fuchsia"/>
-  <remove-project name="device/google/muskie"/>
-  <remove-project name="device/google/taimen"/>
-  <remove-project name="device/google/trout"/>
-  <remove-project name="device/google/vrservices"/>
-  <remove-project name="device/google/wahoo"/>
-  <remove-project name="device/google/wahoo-kernel"/>
-  <remove-project name="device/google_car"/>
-  <remove-project name="device/linaro/bootloader/arm-trusted-firmware"/>
-  <remove-project name="device/linaro/bootloader/edk2"/>
-  <remove-project name="device/linaro/bootloader/OpenPlatformPkg"/>
-  <remove-project name="device/linaro/dragonboard"/>
-  <remove-project name="device/linaro/dragonboard-kernel"/>
-  <remove-project name="device/linaro/hikey"/>
-  <remove-project name="device/linaro/hikey-kernel"/>
-  <remove-project name="device/linaro/poplar"/>
-  <remove-project name="device/linaro/poplar-kernel"/>
-  <remove-project name="device/mediatek/wembley-sepolicy"/>
-  <remove-project name="device/sample"/>
-  <remove-project name="device/ti/beagle-x15"/>
-  <remove-project name="device/ti/beagle-x15-kernel"/>
-
   <!-- and some of the prebuilts -->
-  <remove-project name="platform/prebuilts/gcc/darwin-x86/aarch64/aarch64-linux-android-4.9"/>
-  <remove-project name="platform/prebuilts/gcc/darwin-x86/arm/arm-linux-androideabi-4.9"/>
+  <remove-project name="LineageOS/android_prebuilts_gcc_darwin-x86_aarch64_aarch64-linux-android-4.9"/>
   <remove-project name="platform/prebuilts/gcc/darwin-x86/host/i686-apple-darwin-4.2.1"/>
-  <remove-project name="platform/prebuilts/gcc/darwin-x86/mips/mips64el-linux-android-4.9"/>
-  <remove-project name="platform/prebuilts/gcc/darwin-x86/x86/x86_64-linux-android-4.9"/>
-  <remove-project name="platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9"/>
-  <remove-project name="platform/prebuilts/gcc/linux-x86/mips/mips64el-linux-android-4.9"/>
-  <remove-project name="platform/prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.9"/>
+  <remove-project name="LineageOS/android_prebuilts_gcc_darwin-x86_x86_x86_64-linux-android-4.9"/>
+  <remove-project name="LineageOS/android_prebuilts_gcc_linux-x86_aarch64_aarch64-linux-android-4.9"/>
+  <remove-project name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8"/>
+  <remove-project name="platform/prebuilts/gcc/linux-x86/host/x86_64-w64-mingw32-4.8"/>
+  <remove-project name="LineageOS/android_prebuilts_gcc_linux-x86_x86_x86_64-linux-android-4.9"/>
 
 </manifest>
