@@ -1,8 +1,8 @@
-# Android 11 manifest for the Samsung p4note device family
+# Android 11 LOS manifest for the Samsung p4note device family
 
 ### Init:
 
-    repo init -u git://github.com/Viciouss/manifest_p4note.git -b aosp-11.0
+    repo init -u git://github.com/Viciouss/manifest_p4note.git -b lineage-18.1
     
 ### Status:
 
