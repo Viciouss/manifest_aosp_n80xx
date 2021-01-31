@@ -1,27 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
+  <remote  name="freedesktop"
+           fetch="https://gitlab.freedesktop.org" />
+
   <include name="los.xml" />
 
   <!-- remove repos that are being replaced -->
   <remove-project name="platform/external/mesa3d" />
-  <project path="external/mesa3d" name="GloDroid/glodroid_forks" revision="refs/tags/mesa3d-v5" remote="private" groups="pdk-cw-fs,pdk-fs" />
+  <project path="external/mesa3d" name="Viciouss/external_mesa3d" revision="mesa3d-next" remote="private" groups="pdk-cw-fs,pdk-fs" />
 
   <remove-project name="platform/external/drm_hwcomposer" />
-  <project path="external/drm_hwcomposer" name="GloDroid/glodroid_forks" remote="private" groups="drm_hwcomposer,pdk-fs" revision="refs/tags/drm_hwcomposer-v1" />
+  <project path="external/drm_hwcomposer" name="drm-hwcomposer/drm-hwcomposer" remote="freedesktop" groups="drm_hwcomposer,pdk-fs" revision="c8dd06612a7c05b747512dc8d903d76f32b75c6d" />
 
   <!-- additional repos -->
   <project name="Viciouss/android_device_samsung_p4note" path="device/samsung/p4note" remote="private" revision="lineage-18.1" />
 
-  <project path="external/tinyhal" name="GloDroid/glodroid_forks" remote="private" revision="refs/tags/tinyhal-v1" clone-depth="1" />
-  <project path="external/iio-sensors-hal" name="Viciouss/android-iio-sensors-hal" remote="private" revision="staging" clone-depth="1" />
+  <project path="external/tinyhal" name="Viciouss/external_tinyhal" remote="private" revision="master" />
+  <project path="external/iio-sensors-hal" name="Viciouss/android-iio-sensors-hal" remote="private" revision="staging" />
   <project path="external/gbm_gralloc" name="GloDroid/glodroid_forks" groups="pdk" remote="private" revision="refs/tags/gbm_gralloc-v2"/>
 
   <!-- for building the kernel -->
   <project path="prebuilts/gcc/linux-x86/arm/gcc-linaro-arm-linux-gnueabihf"
                                            remote="private" name="GloDroid/linaro_gcc_prebuilts.git" revision="refs/tags/gcc-linaro-7.4.1-2019.02-x86_64_arm-linux-gnueabihf" />
-
-  <!--project name="omnirom/android_bootable_recovery" path="bootable/recovery-twrp" remote="private" revision="android-9.0" /-->
+  <!--project name="Teamwin/android_bootable_recovery" path="bootable/recovery-twrp" remote="private" revision="android-10.0" /-->
 
   <!-- remove other repos -->
   <remove-project name="platform/external/u-boot" />
