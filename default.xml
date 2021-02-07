@@ -20,6 +20,10 @@
   <project path="external/iio-sensors-hal" name="Viciouss/android-iio-sensors-hal" remote="private" revision="staging" />
   <project path="external/gbm_gralloc" name="GloDroid/glodroid_forks" groups="pdk" remote="private" revision="refs/tags/gbm_gralloc-v2"/>
 
+  <!-- LOS tinycompress only works with kernel sources, skip for now -->
+  <remove-project name="LineageOS/android_external_tinycompress" />
+  <project path="external/tinycompress" name="platform/external/tinycompress" groups="pdk" />
+
   <!-- for building the kernel -->
   <project path="prebuilts/gcc/linux-x86/arm/gcc-linaro-arm-linux-gnueabihf"
                                            remote="private" name="GloDroid/linaro_gcc_prebuilts.git" revision="refs/tags/gcc-linaro-7.4.1-2019.02-x86_64_arm-linux-gnueabihf" />
