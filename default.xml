@@ -11,18 +11,19 @@
   <project path="external/mesa3d" name="Viciouss/external_mesa3d" revision="mesa3d-next" remote="private" groups="pdk-cw-fs,pdk-fs" />
 
   <remove-project name="platform/external/drm_hwcomposer" />
-  <project path="external/drm_hwcomposer" name="drm-hwcomposer/drm-hwcomposer" remote="freedesktop" groups="drm_hwcomposer,pdk-fs" revision="c8dd06612a7c05b747512dc8d903d76f32b75c6d" />
+  <project path="external/drm_hwcomposer" name="drm-hwcomposer/drm-hwcomposer" remote="freedesktop" groups="drm_hwcomposer,pdk-fs" revision="92c6a40d5240b2b58bbe9c52eb7e7a4692380ad9" />
 
   <!-- additional repos -->
   <project name="Viciouss/android_device_samsung_p4note" path="device/samsung/p4note" remote="private" revision="lineage-18.1" />
 
   <project path="external/tinyhal" name="Viciouss/external_tinyhal" remote="private" revision="master" />
   <project path="external/iio-sensors-hal" name="Viciouss/android-iio-sensors-hal" remote="private" revision="staging" />
-  <project path="external/gbm_gralloc" name="GloDroid/glodroid_forks" groups="pdk" remote="private" revision="refs/tags/gbm_gralloc-v2"/>
+
+  <project path="external/gbm_gralloc" name="GloDroid/glodroid_forks" groups="pdk" remote="private" revision="4be2c4656c6313fa19f2f2a20e0c568d2122d851"/>
 
   <!-- LOS tinycompress only works with kernel sources, skip for now -->
   <remove-project name="LineageOS/android_external_tinycompress" />
-  <project path="external/tinycompress" name="platform/external/tinycompress" groups="pdk" />
+  <project path="external/tinycompress" name="platform/external/tinycompress" groups="pdk" remote="aosp" />
 
   <!-- for building the kernel -->
   <project path="prebuilts/gcc/linux-x86/arm/gcc-linaro-arm-linux-gnueabihf"
