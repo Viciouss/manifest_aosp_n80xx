@@ -8,7 +8,7 @@
 
   <!-- remove repos that are being replaced -->
   <remove-project name="platform/external/mesa3d" />
-  <project path="external/mesa3d" name="Viciouss/external_mesa3d" revision="mesa3d-next" remote="private" groups="pdk-cw-fs,pdk-fs" />
+  <project path="external/mesa3d" name="Viciouss/external_mesa3d" revision="mesa3d-21.1.1" remote="private" groups="pdk-cw-fs,pdk-fs" />
 
   <remove-project name="platform/external/drm_hwcomposer" />
   <project path="external/drm_hwcomposer" name="drm-hwcomposer/drm-hwcomposer" remote="freedesktop" groups="drm_hwcomposer,pdk-fs" revision="92c6a40d5240b2b58bbe9c52eb7e7a4692380ad9" />
