@@ -8,29 +8,25 @@
 
   <!-- remove repos that are being replaced -->
   <remove-project name="platform/external/mesa3d" />
-  <project path="external/mesa3d" name="Viciouss/external_mesa3d" revision="mesa3d-21.1.1" remote="private" groups="pdk-cw-fs,pdk-fs" />
-
+  <remove-project name="platform/external/libdrm" />
   <remove-project name="platform/external/drm_hwcomposer" />
-  <project path="external/drm_hwcomposer" name="drm-hwcomposer/drm-hwcomposer" remote="freedesktop" groups="drm_hwcomposer,pdk-fs" revision="92c6a40d5240b2b58bbe9c52eb7e7a4692380ad9" />
-
-  <!-- additional repos -->
-  <project name="Viciouss/android_device_samsung_p4note" path="device/samsung/p4note" remote="private" revision="lineage-18.1" />
-
-  <project path="external/tinyhal" name="Viciouss/external_tinyhal" remote="private" revision="master" />
-  <project path="external/iio-sensors-hal" name="Viciouss/android-iio-sensors-hal" remote="private" revision="staging" />
-
-  <project path="external/gbm_gralloc" name="GloDroid/glodroid_forks" groups="pdk" remote="private" revision="4be2c4656c6313fa19f2f2a20e0c568d2122d851"/>
-
+  <remove-project name="platform/external/minigbm" />
+  <remove-project name="platform/external/u-boot" />
   <!-- LOS tinycompress only works with kernel sources, skip for now -->
   <remove-project name="LineageOS/android_external_tinycompress" />
-  <project path="external/tinycompress" name="platform/external/tinycompress" groups="pdk" remote="aosp" />
+
+  <!-- added repos -->
+  <project remote="private" name="Viciouss/android_device_samsung_p4note" path="device/samsung/p4note" />
+  <project remote="private" name="Viciouss/android_external_libdrm" path="external/libdrm" groups="pdk" />
+  <project remote="private" name="Viciouss/external_tinyhal" path="external/tinyhal" revision="master" />
+  <project remote="private" name="Viciouss/android-iio-sensors-hal" path="external/iio-sensors-hal" revision="staging" />
+  <project remote="private" name="Viciouss/glodroid_forks" path="external/minigbm" revision="minigbm-next" />
+  <project remote="private" name="GloDroid/glodroid_forks" path="external/mesa3d" revision="ef0fa2da0bcfc503c4303699f352af9b261999ef" groups="pdk-cw-fs,pdk-fs" />
+  <project remote="private" name="GloDroid/glodroid_forks" path="external/drm_hwcomposer" revision="64bbcdc621273bf3af4e7cc4e74efd2c840c4068" groups="drm_hwcomposer,pdk-fs" />  
+  <project remote="aosp" name="platform/external/tinycompress" path="external/tinycompress" groups="pdk" />
 
   <!-- for building the kernel -->
-  <project path="prebuilts/gcc/linux-x86/arm/gcc-linaro-arm-linux-gnueabihf"
-                                           remote="private" name="GloDroid/linaro_gcc_prebuilts.git" revision="refs/tags/gcc-linaro-7.4.1-2019.02-x86_64_arm-linux-gnueabihf" />
-  <!--project name="Teamwin/android_bootable_recovery" path="bootable/recovery-twrp" remote="private" revision="android-10.0" /-->
-
-  <!-- remove other repos -->
-  <remove-project name="platform/external/u-boot" />
+  <project remote="private" name="GloDroid/linaro_gcc_prebuilts.git"
+            path="prebuilts/gcc/linux-x86/arm/gcc-linaro-arm-linux-gnueabihf" revision="refs/tags/gcc-linaro-7.4.1-2019.02-x86_64_arm-linux-gnueabihf" />
 
 </manifest>
