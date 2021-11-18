@@ -22,7 +22,8 @@
   <project remote="private" name="Viciouss/android-iio-sensors-hal" path="external/iio-sensors-hal" revision="staging" />
   <project remote="private" name="Viciouss/glodroid_forks" path="external/minigbm" revision="minigbm-next" />
   <project remote="private" name="GloDroid/glodroid_forks" path="external/mesa3d" revision="ef0fa2da0bcfc503c4303699f352af9b261999ef" groups="pdk-cw-fs,pdk-fs" />
-  <project remote="private" name="GloDroid/glodroid_forks" path="external/drm_hwcomposer" revision="64bbcdc621273bf3af4e7cc4e74efd2c840c4068" groups="drm_hwcomposer,pdk-fs" />  
+  <!--project remote="private" name="GloDroid/glodroid_forks" path="external/drm_hwcomposer" revision="64bbcdc621273bf3af4e7cc4e74efd2c840c4068" groups="drm_hwcomposer,pdk-fs" /-->
+  <project remote="freedesktop" name="drm-hwcomposer/drm-hwcomposer" path="external/drm_hwcomposer" revision="0ee8f58b93a037c5a54bb0a05c12228845a70a76" groups="drm_hwcomposer,pdk-fs" />
   <project remote="aosp" name="platform/external/tinycompress" path="external/tinycompress" groups="pdk" />
 
   <!-- for building the kernel -->
