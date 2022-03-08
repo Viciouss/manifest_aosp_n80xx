@@ -8,7 +8,6 @@
 
   <!-- remove repos that are being replaced -->
   <remove-project name="platform/external/mesa3d" />
-  <remove-project name="platform/external/libdrm" />
   <remove-project name="platform/external/drm_hwcomposer" />
   <remove-project name="platform/external/minigbm" />
   <remove-project name="platform/external/u-boot" />
@@ -17,7 +16,6 @@
 
   <!-- added repos -->
   <project remote="private" name="Viciouss/android_device_samsung_p4note" path="device/samsung/p4note" />
-  <project remote="private" name="Viciouss/android_external_libdrm" path="external/libdrm" groups="pdk" />
   <project remote="private" name="Viciouss/external_tinyhal" path="external/tinyhal" revision="master" />
   <project remote="private" name="Viciouss/android-iio-sensors-hal" path="external/iio-sensors-hal" revision="staging" />
   <project remote="private" name="GloDroid/glodroid_forks" path="external/minigbm" revision="152f87743c0dcb0cdbb7989459903e57785d33ee" />
