@@ -10,7 +10,6 @@
   <remove-project name="platform/external/mesa3d" />
   <remove-project name="platform/external/drm_hwcomposer" />
   <remove-project name="platform/external/minigbm" />
-  <remove-project name="platform/external/u-boot" />
   <!-- LOS tinycompress only works with kernel sources, skip for now -->
   <remove-project name="LineageOS/android_external_tinycompress" />
 
