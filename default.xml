@@ -22,6 +22,8 @@
   <!--project remote="freedesktop" name="drm-hwcomposer/drm-hwcomposer" path="external/drm_hwcomposer" revision="720f65224fb0ceaaee8581c4db1e55a79669c494" groups="drm_hwcomposer,pdk-fs" /-->
   <project remote="freedesktop" name="drm-hwcomposer/drm-hwcomposer" path="external/drm_hwcomposer" revision="903a372231d431254459dfd68f99e76106917e08" groups="drm_hwcomposer,pdk-fs" />
 
+  <project remote="private" name="Viciouss/linux" path="kernel/samsung/p4note" revision="android12-5.10.44-p4note" />
+
   <project remote="aosp" name="platform/external/tinycompress" path="external/tinycompress" groups="pdk" />
 
   <!-- for building the kernel -->
