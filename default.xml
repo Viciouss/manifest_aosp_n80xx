@@ -17,10 +17,9 @@
   <project remote="private" name="Viciouss/android_device_samsung_p4note" path="device/samsung/p4note" />
   <project remote="private" name="Viciouss/external_tinyhal" path="external/tinyhal" revision="master" />
   <project remote="private" name="Viciouss/android-iio-sensors-hal" path="external/iio-sensors-hal" revision="staging" />
-  <project remote="private" name="GloDroid/glodroid_forks" path="external/minigbm" revision="152f87743c0dcb0cdbb7989459903e57785d33ee" />
-  <project remote="private" name="GloDroid/glodroid_forks" path="external/mesa3d" revision="4f27560d95992731527661dcddd787c752c1a01d" groups="pdk-cw-fs,pdk-fs" />
-  <!--project remote="freedesktop" name="drm-hwcomposer/drm-hwcomposer" path="external/drm_hwcomposer" revision="720f65224fb0ceaaee8581c4db1e55a79669c494" groups="drm_hwcomposer,pdk-fs" /-->
-  <project remote="freedesktop" name="drm-hwcomposer/drm-hwcomposer" path="external/drm_hwcomposer" revision="903a372231d431254459dfd68f99e76106917e08" groups="drm_hwcomposer,pdk-fs" />
+  <project remote="private" name="GloDroid/glodroid_forks" path="external/minigbm" revision="minigbm-next" />
+  <project remote="freedesktop" name="mesa/mesa" path="external/mesa3d" revision="21.3" groups="pdk-cw-fs,pdk-fs" />
+  <project remote="private" name="GloDroid/glodroid_forks" path="external/drm_hwcomposer" revision="drm_hwcomposer-next" groups="drm_hwcomposer,pdk-fs" />
 
   <project remote="private" name="Viciouss/linux" path="kernel/samsung/p4note" revision="android12-5.10.44-p4note" />
 
