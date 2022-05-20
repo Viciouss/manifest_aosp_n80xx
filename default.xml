@@ -10,18 +10,20 @@
   <remove-project name="platform/external/mesa3d" />
   <remove-project name="platform/external/drm_hwcomposer" />
   <remove-project name="platform/external/minigbm" />
+  <remove-project name="platform/external/libdrm" />
   <!-- LOS tinycompress only works with kernel sources, skip for now -->
   <remove-project name="LineageOS/android_external_tinycompress" />
 
   <!-- added repos -->
+  <project path="external/libdrm" name="platform/external/libdrm" groups="pdk" remote="aosp" revision="e460836a34ce9f55bf3ea49646308bc5cb2a79f7" />
   <project remote="private" name="Viciouss/android_device_samsung_p4note" path="device/samsung/p4note" />
   <project remote="private" name="Viciouss/external_tinyhal" path="external/tinyhal" revision="master" />
   <project remote="private" name="Viciouss/android-iio-sensors-hal" path="external/iio-sensors-hal" revision="staging" />
-  <project remote="private" name="GloDroid/glodroid_forks" path="external/minigbm" revision="minigbm-next" />
-  <project remote="freedesktop" name="mesa/mesa" path="external/mesa3d" revision="21.3" groups="pdk-cw-fs,pdk-fs" />
-  <project remote="private" name="GloDroid/glodroid_forks" path="external/drm_hwcomposer" revision="drm_hwcomposer-next" groups="drm_hwcomposer,pdk-fs" />
+  <project remote="private" name="GloDroid/glodroid_forks" path="external/minigbm" revision="ea5baf7f2490efe478a4f83b50bcb1fb64d7cd73" />
+  <project remote="freedesktop" name="mesa/mesa" path="external/mesa3d" revision="main" groups="pdk-cw-fs,pdk-fs" />
+  <project remote="freedesktop" name="drm-hwcomposer/drm-hwcomposer" path="external/drm_hwcomposer" revision="a32f907c9dddc4d064b0bff7c68dddb910ad3812" groups="drm_hwcomposer,pdk-fs" />
 
-  <project remote="private" name="Viciouss/linux" path="kernel/samsung/p4note" revision="android12-5.10.44-p4note" />
+  <project remote="private" name="Viciouss/linux" path="kernel/samsung/p4note" revision="android12-5.10-2022-04-p4note" />
 
   <project remote="aosp" name="platform/external/tinycompress" path="external/tinycompress" groups="pdk" />
 
