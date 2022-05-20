@@ -1,4 +1,4 @@
-# Android 11 LOS manifest for the Samsung p4note device family
+# Android 12.1 LOS manifest for the Samsung p4note device family
 
 ### Init:
 
