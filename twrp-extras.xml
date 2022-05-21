@@ -8,8 +8,8 @@
             fetch="https://github.com/LineageOS"
             review="https://review.lineageos.org" />
 
-    <remote name="Github"
-            fetch="https://github.com/" />
+    <remote name="private"
+           fetch="ssh://git@github.com" />
 
 <!-- TWRP lives in TeamWin repo, not OmniROM -->
     <remove-project name="android_bootable_recovery" />
@@ -37,6 +37,6 @@
     <project name="android_external_nano" path="external/nano" remote="LineageOS" revision="cm-14.1" />
     <project name="android_external_libncurses" path="external/libncurses" remote="LineageOS" revision="cm-14.1" />
 
-    <project name="Viciouss/android_device_samsung_p4note" path="device/samsung/p4note" remote="Github" revision="twrp-9_nougat" />
+    <project name="Viciouss/android_device_samsung_p4note" path="device/samsung/p4note" remote="private" revision="twrp-9_nougat"/>
 
 </manifest>
