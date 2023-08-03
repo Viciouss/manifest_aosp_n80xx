@@ -1,8 +1,8 @@
-# Android 12.1 LOS manifest for the Samsung p4note device family
+# Android 13.0 LOS manifest for the Samsung p4note device family
 
 ### Init:
 
-    repo init -u git://github.com/Viciouss/manifest_p4note.git -b lineage-19.1
+    repo init -u git://github.com/Viciouss/manifest_p4note.git -b lineage-20.0
     
 ### Status:
 
